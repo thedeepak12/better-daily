@@ -20,5 +20,15 @@
   "permissions": [
     "storage",
     "alarms"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/problems.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }
