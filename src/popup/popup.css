@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  background-color: #1a1a1a;
+  color: #eff1f6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #eff1f6;
+}
+
+.date {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.problem-card {
+  display: block;
+  background-color: #282828;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 0;
+  border: 1px solid #3c3c3c;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.problem-card:hover {
+  border-color: #282828;
+  background-color: #252525;
+  transform: translateY(-2px);
+}
+
+.problem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.problem-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #eff1f6;
+  margin: 0 0 12px 0;
+}
+
+.problem-title:empty::after {
+  content: 'Loading...';
+  color: #a0a0a0;
+}
+
+.problem-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.difficulty {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.difficulty.medium {
+  background-color: rgba(255, 192, 30, 0.15);
+  color: #F5C01E;
+}
+
+.difficulty.easy {
+  background-color: rgba(0, 184, 163, 0.15);
+  color: #46C1BD;
+}
+
+.difficulty.hard {
+  background-color: rgba(239, 71, 67, 0.15);
+  color: #F8615C;
+}
+
+.category-tag {
+  background-color: #3a3a3a;
+  color: #a0a0a0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
