@@ -1,0 +1,11 @@
+{
+  "name": "better-daily",
+  "version": "1.0.0",
+  "description": "LeetCode Daily Coding Challenge, but better.",
+  "scripts": {
+    "build:all": "npm run build:firefox && npm run build:chromium",
+    "build:firefox": "node scripts/build.js firefox",
+    "build:chromium": "node scripts/build.js chromium"
+  },
+  "author": "Deepak Kumar"
+}
